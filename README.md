@@ -4,11 +4,13 @@ a movie app created with react native (expo)
 
 #to start the app
 
-1- clone the repository
+1- get an tmdb v3 api key and add an env key `API_KEY` there is an example env file
 
-2- install dependencies with `yarn` or `npm i`
+2- clone the repository
 
-3- use `expo start` to stare the
+3- install dependencies with `yarn` or `npm i`
+
+4- use `expo start` to stare the
 
 
 ## example
