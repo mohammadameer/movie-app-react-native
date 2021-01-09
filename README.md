@@ -10,7 +10,7 @@ a movie app created with react native (expo)
 
 3- install dependencies with `yarn` or `npm i`
 
-4- use `expo start` to stare the
+4- use `expo start` to start the app
 
 
 ## example
