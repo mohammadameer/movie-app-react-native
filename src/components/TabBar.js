@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  View,
-  TouchableWithoutFeedback,
-  StyleSheet,
-  Text,
-  TouchableHighlight,
-  TouchableOpacity,
-  TouchableWithoutFeedbackBase,
-} from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 
 // components
 import { MaterialIcons } from '@expo/vector-icons';
@@ -20,15 +12,18 @@ function TabBar({ state, descriptors, navigation }) {
   }
   return (
     <View style={styles.root}>
+      {/* all tabs */}
       <View style={styles.routes}>
         {state.routes.map((route, index) => {
           const { options } = descriptors[route.key];
-          const label =
+          {
+            /* const label =
             options.tabBarLabel !== undefined
               ? options.tabBarLabel
               : options.title !== undefined
               ? options.title
-              : route.name;
+              : route.name; */
+          }
 
           const isFocused = state.index === index;
 
@@ -50,7 +45,7 @@ function TabBar({ state, descriptors, navigation }) {
               target: route.key,
             });
           };
-
+          // tab
           return (
             <View key={index} style={styles.container}>
               <TouchableOpacity
